@@ -1,0 +1,25 @@
+{
+  "name": "tourism",
+  "version": "1.0.0",
+  "description": "tourism template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annkirilenko/tourism.git"
+  },
+  "author": "Anna Kirilenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annkirilenko/tourism/issues"
+  },
+  "homepage": "https://github.com/annkirilenko/tourism#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0"
+  }
+}

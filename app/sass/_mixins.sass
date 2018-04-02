@@ -1,0 +1,41 @@
+//clearfix
+@mixin clearfix 
+	display: block
+	content: ''
+	clear: both
+
+//box-sizing
+@mixin box-sizing($box-sizing: border-box)
+	box-sizing: $box-sizing
+
+//grid
+@mixin build-grid($col_count: 12)
+	@for $i from 1 through $col_count
+		.col-#{$i}-#{$col_count}
+			width: 100% / $col_count  * $i
+
+// masonry layout (like on pinterest)
+@mixin masonry($masonry_columns: 2,$masonry_gap: 0)
+	column-count: $masonry_columns
+	column-gap: $masonry_gap
+
+	&--item
+		display: inline-block
+		width: 100%
+
+//flex
+@mixin display-flex($flex-direction: row, $justify-content: space-between, $flex-wrap: nowrap)
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	-webkit-box-pack: justify
+	-webkit-justify-content: $justify-content
+	justify-content: $justify-content
+	-webkit-flex-direction: $flex-direction
+	-ms-flex-direction: $flex-direction
+	flex-direction: $flex-direction
+	-webkit-flex-wrap: $flex-wrap
+	-ms-flex-wrap: $flex-wrap
+	flex-wrap: $flex-wrap
